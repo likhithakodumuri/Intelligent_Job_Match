@@ -10,4 +10,3 @@ Pillow
 youtube-dl
 nltk
 pdfminer3
-en-core-web-sm 
