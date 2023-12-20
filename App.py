@@ -109,7 +109,7 @@ def run():
     img = img.resize((250, 250))
     st.image(img)
 
-    # Create the DB
+    # Create the Data Base
     db_sql = """CREATE DATABASE IF NOT EXISTS SRA;"""
     cursor.execute(db_sql)
     connection.select_db("sra")
