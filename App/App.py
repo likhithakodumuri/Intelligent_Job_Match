@@ -29,12 +29,10 @@ from PIL import Image
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
 import nltk
 nltk.download('stopwords')
-
+from pyresparser import ResumeParser
 
 ###### Preprocessing functions ######
 
-
-# Generates a link allowing the data in a given panda dataframe to be downloaded in csv format 
 def get_csv_download_link(df,filename,text):
     csv = df.to_csv(index=False)
     ## bytes conversions
